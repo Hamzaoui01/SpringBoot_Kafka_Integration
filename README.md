@@ -1,5 +1,9 @@
+# Description
+I expect in this project to run two web APIs send messages to each other using apache kafka brocker.
+
 # Requirement to run
-- You should have apache kafka installed in your environment or install it [here](https://kafka.apache.org/quickstart) 
+- You should have apache kafka installed in your environment or check the installatin guide from here [here](https://kafka.apache.org/quickstart) 
+
 # Install dependencies
 ```
 mvn intall
@@ -25,3 +29,4 @@ Kafka-topics.bat --create --zookeeper localhost :2181 --replication-factor 1 --p
 1. We should run two instance in diffrent port: you can change the serer port in the application.properties file befor runing the applicatin instance.
 
 2. For the first instance make the first topic "kafka_exemple" for producing, and the second for consuming, and inverse them in the second instance, **you can do this in the kafkaConstant class**
+
